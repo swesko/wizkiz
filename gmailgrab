@@ -1,3 +1,7 @@
+import email
+import getpass
+import os
+import sys
 import imaplib
 import base64
 import os
@@ -11,7 +15,7 @@ port = '993'
 mail = imaplib.IMAP4_SSL(host,port)
 download_dir = 'attachements download path'
 
-mail.login(user-gmail, passwd)
+mail.login(user_gmail, passwd)
 
 mail.select('Inbox')
 type, data = mail.search(None, "ALL")
